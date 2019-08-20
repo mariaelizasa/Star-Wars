@@ -1,0 +1,63 @@
+/*body {
+  background-image: url('./space.png');
+} */
+
+/* alterar td dps */
+html,
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1rem;
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* alterar td dps */
+.header {
+  margin: 0%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* alterar td dps */
+
+.menu,
+li,
+a {
+  display: flex;
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0;
+}
+
+img {
+  margin: 0%;
+  padding: 0;
+}
+.grid > div:nth-child(4) {
+  display: grid;
+  grid-column: span 2;
+  background-color: black;
+}
+.grid > div:nth-child(7) {
+  margin: 0px;
+  display: grid;
+  grid-column: span 2;
+  background-color: black;
+}
