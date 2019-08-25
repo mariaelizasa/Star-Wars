@@ -1,6 +1,7 @@
 body {
   background-color: black;
 }
+/* Menu */
 
 html,
 body,
@@ -40,6 +41,9 @@ a {
 h1 {
   text-align: center;
 }
+
+/* Conteúdo */
+
 .overlay {
   background-image: url('./fo2.jpg');
   transition-delay: 1s;
@@ -111,6 +115,21 @@ img {
   -moz-transition: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+.zoom p{
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-top: -200px;
+  margin-bottom: 200px;
+  font-size: 28px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.footer{
+    background-color:#0e0d0d;
+    padding: 80px;
+    
 }
 
 /* border-radius: 4px;
