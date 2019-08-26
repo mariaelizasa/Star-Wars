@@ -1,6 +1,11 @@
 body {
   background-color: black;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
+
 /* Menu */
 
 html,
@@ -13,29 +18,32 @@ p {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: arial;
 }
-
 a {
   text-decoration: none;
   color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .header {
   margin: 0%;
   background-color: black;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px;
   align-items: center;
   flex-wrap: wrap;
+}
+.header ul li a:hover {
+  color: gray;
 }
 .menu,
 li,
 a {
   display: flex;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding: 2px;
 }
 h1 {
@@ -46,10 +54,10 @@ h1 {
 
 .overlay {
   background-image: url('./fo2.jpg');
-  transition-delay: 1s;
   width: 100%;
   height: 550px;
   position: relative;
+  background-size: 100% 100%;
 }
 .overlay:before {
   position: absolute;
@@ -68,6 +76,7 @@ img {
   max-height: 350px;
   width: 100%;
   opacity: 0.6;
+  border-radius: 15px;
 }
 .grid > div:nth-child(4) {
   display: grid;
@@ -89,7 +98,6 @@ img {
 .grid > div:nth-child(5) {
   grid-column-start: 3;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -110,13 +118,12 @@ img {
   -webkit-transition: all 0.3;
   transition: all 0.3s;
 }
-
 .zoom:hover img {
   -moz-transition: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.zoom p{
+.zoom p {
   text-align: center;
   color: white;
   position: relative;
@@ -124,25 +131,30 @@ img {
   margin-bottom: 200px;
   font-size: 28px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
 }
-.footer{
-    background-color:#0e0d0d;
-    padding: 80px;
-    
+/* Rodapé */
+
+.footer {
+  background-color: #0e0d0d;
+  padding: 80px;
+  background-image: url('./depositphotos_189942432-stock-video-space-travelling-the-speed-of.jpg');
+  opacity: 0.6;
 }
-
-/* border-radius: 4px;
-    left: auto;
-    margin: 0 auto;
-    position: relative;
-    transform: translateY(15px);
-    transition: transform .3s,width .3s;
-    width: calc(100% - 60px);
+.dev {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin-top: 65px;
+  margin-bottom: -65px;
+  font-size: 15px;
 }
-
-
-
-
-
-
+.descricao {
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin-top: 68px;
+  margin-bottom: -68px;
+  font-size: 12px;
+}
