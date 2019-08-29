@@ -28,15 +28,13 @@ a {
 }
 .header {
   margin: 0%;
-  background-color: black;
   display: flex;
   justify-content: space-between;
   padding: 15px;
   align-items: center;
   flex-wrap: wrap;
-}
-.header ul li a:hover {
-  color: gray;
+
+  position: fixed;
 }
 .menu,
 li,
@@ -50,6 +48,10 @@ h1 {
   text-align: center;
 }
 
+.logo {
+  width: 50%;
+  height: 11111111px;
+}
 /* Conteúdo */
 .container {
   position: relative;
@@ -60,6 +62,10 @@ h1 {
   justify-content: center;
   overflow: hidden;
   opacity: 0.4;
+}
+h1 {
+  color: #ffffff;
+  padding: 20px;
 }
 
 /* GRID */
