@@ -1,9 +1,13 @@
-body {
-  background-color: black;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #0e0d0d;
 }
 
 /* Menu */
@@ -19,22 +23,19 @@ p {
   padding: 0px;
   list-style: none;
   font-size: 1em;
-  font-family: arial;
 }
 a {
   text-decoration: none;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header {
+  display: flex;
   margin: 0%;
   display: flex;
-  justify-content: space-between;
   padding: 15px;
   align-items: center;
   flex-wrap: wrap;
-
-  position: fixed;
+  background-color: black;
 }
 .menu,
 li,
@@ -46,11 +47,6 @@ a {
 }
 h1 {
   text-align: center;
-}
-
-.logo {
-  width: 50%;
-  height: 11111111px;
 }
 /* Conteúdo */
 .container {
@@ -67,10 +63,21 @@ h1 {
   color: #ffffff;
   padding: 20px;
 }
-
+a:hover {
+  text-decoration: underline white;
+}
+.menu img {
+  display: flex;
+  height: 90px;
+  width: 160px;
+  margin-bottom: -40px;
+  margin-top: -30px;
+  justify-content: space-around;
+  padding-right: 85%;
+}
 /* GRID */
 
-img {
+.zoom img {
   min-height: 350px;
   max-height: 350px;
   width: 100%;
@@ -82,7 +89,7 @@ img {
   margin: 0 auto;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: black;
+
   max-width: 1800px;
   width: 205%;
 }
@@ -90,7 +97,7 @@ img {
   margin: 0 auto;
   display: grid;
   grid-column-start: 2;
-  background-color: black;
+
   max-width: 1800px;
   width: 205%;
 }
@@ -129,31 +136,36 @@ img {
   margin-top: -200px;
   margin-bottom: 200px;
   font-size: 28px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* Rodapé */
 
 .footer {
   background-color: #0e0d0d;
-  padding: 80px;
+  padding: 40px;
   background-image: url('./depositphotos_189942432-stock-video-space-travelling-the-speed-of.jpg');
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .dev {
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+
   position: relative;
-  margin-top: 65px;
-  margin-bottom: -65px;
+  margin-top: 32px;
+  margin-bottom: -32px;
   font-size: 15px;
 }
 .descricao {
   color: #ffffff;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+
   position: relative;
-  margin-top: 68px;
-  margin-bottom: -68px;
+  margin-top: 34px;
+  margin-bottom: -34px;
   font-size: 12px;
+}
+.footer img {
+  display: flex;
+  width: 200px;
+  height: 150px;
+  justify-content: flex-start;
 }
