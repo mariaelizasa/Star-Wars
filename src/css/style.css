@@ -81,11 +81,11 @@ a:hover {
   margin-bottom: -40px;
   margin-top: -30px;
   padding-right: 15px;
-  align-content: ;
+  align-content: center;
 }
 /* GRID */
 
-.zoom img {
+.gridimg img {
   min-height: 350px;
   max-height: 350px;
   width: 100%;
@@ -131,21 +131,21 @@ a:hover {
     grid-column-start: 3;
   }
 
-  .zoom {
+  .gridimg {
     overflow: hidden;
   }
-  .zoom img {
+  .gridimg img {
     max-width: all 0.3s;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3;
     transition: all 0.3s;
   }
-  .zoom:hover img {
-    -moz-transition: scale(1.1);
+  .gridimg:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
-  .zoom p {
+
+  .gridimg p {
     text-align: center;
     color: white;
     position: relative;
@@ -156,20 +156,21 @@ a:hover {
 
   /* Rodapé */
 }
+
 .footer {
   background-color: #0e0d0d;
   padding: 40px;
   background-image: url('./depositphotos_189942432-stock-video-space-travelling-the-speed-of.jpg');
   opacity: 0.5;
 }
+
 .dev {
   color: white;
   text-align: center;
-
   position: relative;
   margin-top: 32px;
   margin-bottom: -32px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .descricao {
   color: #ffffff;
@@ -178,7 +179,7 @@ a:hover {
   position: relative;
   margin-top: 34px;
   margin-bottom: -34px;
-  font-size: 12px;
+  font-size: 10px;
 }
 .footer img {
   display: flex;
