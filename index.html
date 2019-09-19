@@ -1,83 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
-    <link rel="config" type="text/css" href="./src/css/config.css" />
-    <link rel="icon" href="./src/css/Favicon.ico" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
-
-    <title>Website Star Wars</title>
+    <link rel="stylesheet" href="./src/app/css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>StarWars</title>
   </head>
   <body>
-
-    <header class="header"> <!--Menu-->
-      <a href="#" ></a>
-      <nav>
-        <ul class="menu">
-            <img src="./src/css/logo.png">
-        
-          <li><a href="">Home</a></li>
-          <li><a href="">Notícias</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Contato</a></li>    
-          
-
-        </ul>
-      </nav>
-    </header>
-
-
-  
-    <div class="container">
-      <video autoplay loop muted>
-        <source src ="src/css/starwars.mp4">
-      </video>
-    </div> <!--Imagem Tela Principal-->
-
-    <section class="grid"> <!--Grid-->
-      <div class="gridimg">
-        <img src="./src/css/preview_Star-Wars-Battlefront-3.jpg" class="img-responsive" />
-        <p>Star Wars Battlefront</p>
-      </div>
-      <div class="gridimg">
-        <img src="./src/css/jyn-1.jpg" class="img-responsive" />
-        <p>Rogue One</p>
-      </div>
-      <div class="gridimg">
-        <img src="./src/css/hq.png" class="img-responsive" />
-        <p>HQ's</p>
-      </div>
-      <div class="gridimg">
-        <img src="./src/css/giphy (2).gif" class="img-responsive" />
-        <p>Star Wars: Os Últimos Jedi</p>
-      </div>
-      <div class="gridimg">
-        <img src="./src/css/star-wars-colecao-editora-aleph.png" class="img-responsive" />
-        <p>Livros</p>
-      </div>
-      <div class="gridimg">
-        <img src="./src/css/a.webp" class="img-responsive" />
-        <p>Saga</p>
-      </div>
-      <div class="gridimg">
-        <img src="./src/css/bf.jpg" class="img-responsive" />
-        <p>Star Wars Battlefront: 2</p>
-      </div>
-    </section>
-
-    <footer>
-      <div>
-        <div class="footer"> <!--Rodapé-->
-          <img src="./src/css/logo.png" alt="">
-          <p class="dev">Desenvolvido por Maria Eliza</p>
-          <p class="descricao"> Star Wars é um Copyright e marca comercial da LucasFilm LTD. 
-          Este site destina-se apenas a fins informativos e não está de qualquer forma associado ao LFL.</p>
-          </p>
+    <div class="navbar">
+      <span>Star Wars</span>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Videos</li>
+        <li>Wallpappers</li>
+      </ul>
+      <button>MENU</button>
+    </div>
+    <div class="menu-mobile">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Videos</li>
+        <li>Wallpappers</li>
+      </ul>
+    </div>
+    <div class="grid">
+      <section class="first-content">
+        <div>
+          <img src="./src/app/css/images/hq.png" alt="" />
+          <p>HQ's</p>
         </div>
-      </div>
-    </footer>
+        <div>
+          <img src="./src/app/css/images/bf.jpg" alt="" />
+          <p>Star Wars: Battlefront</p>
+        </div>
+      </section>
+      <section class="second-content">
+        <div>
+          <img src="./src/app/css/images/jyn-1.jpg" />
+          <p>Rogue One</p>
+        </div>
+
+        <div>
+          <img src="./src/app/css/images/star-wars-colecao-editora-aleph.png" />
+          <p>Livros</p>
+        </div>
+
+        <div>
+          <img src="./src/app/css/images/a.webp" />
+          <p>Saga</p>
+        </div>
+      </section>
+    </div>
+    <script src="./src/app/javascript/script.js"></script>
   </body>
 </html>
