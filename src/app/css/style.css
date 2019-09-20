@@ -51,11 +51,20 @@ body {
   display: none;
   text-align: center;
   background-color: #090909;
-  color: #ffffff;
+  color: #a6a6a6;
 }
 .menu-mobile > ul > li {
   padding-bottom: 10px;
   padding-top: 10px;
+}
+h1 {
+  padding-top: 40px;
+  color: #a6a6a6;
+  text-align: center;
+  font-size: 18px;
+}
+h1:after {
+  content: ' |';
 }
 
 .show {
@@ -66,26 +75,29 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  overflow: hidden;
 }
 .first-content > div {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .first-content > div > img {
-  width: 410px;
-  height: 350px;
+  width: 400px;
+  height: 300px;
   border-radius: 25px;
   position: relative;
   opacity: 0.4;
 }
+
 .first-content > div > p {
   position: relative;
-  margin-top: -200px;
-  margin-bottom: 200px;
+  margin-top: -150px;
+  margin-bottom: 150px;
   text-align: center;
   color: #f2f2f2;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .second-content {
@@ -99,20 +111,19 @@ body {
   margin-right: auto;
 }
 .second-content > div > img {
-  width: 410px;
-  height: 350px;
+  width: 400px;
+  height: 300px;
   border-radius: 25px;
   position: relative;
   opacity: 0.4;
 }
 .second-content > div > p {
   position: relative;
-  margin-top: -200px;
-  margin-bottom: 200px;
+  margin-top: -150px;
+  margin-bottom: 150px;
   text-align: center;
   color: #f2f2f2;
-
-  font-size: 30px;
+  font-size: 25px;
 }
 
 @media (max-width: 1000px) {
@@ -121,6 +132,9 @@ body {
   }
   .navbar > button {
     display: block;
+  }
+  h1 {
+    font-size: 12px;
   }
   .show {
     display: block;
